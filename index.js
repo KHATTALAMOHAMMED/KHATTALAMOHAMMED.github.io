@@ -18,20 +18,7 @@ burger.addEventListener("click", function () {
     }
   });
 });
-// document.addEventListener("click", (e) => {
-//   if (e.target != menu && e.target != burger) {
-//     console.log("kkkkkkkkk");
-//     burger.classList.remove("rotate");
-//     nav.classList.remove("active");
-//     menu.classList.remove("active");
-//     links.forEach((link) => {
-//       if (link.style.animation) {
-//         link.style.animation = "";
-//       }
-//     });
-//   }
-// });
-//disactivate the navar
+
 var mainLinks = document.querySelectorAll(".menu li a");
 mainLinks.forEach((mainLink) => {
   mainLink.addEventListener("click", function () {
@@ -148,7 +135,7 @@ const secondImpactingPoint = 900;
 //////////////////////////////////////////////////////////////////////
 /*----------------------------titles----------------------------------*/
 const titles = document.querySelectorAll(".section-title");
-let isFirstColored=false;
+let isFirstColored = false;
 window.addEventListener("scroll", () => {
   if (this.scrollY > 280) {
     titles[0].style.animation = "fade-in-top 1s ease forwards";
